@@ -1,0 +1,83 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    background-color: #142231;
+    color: rgb(249, 54, 54);
+    align-items: center;
+}
+
+.bottom {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 5%;
+    background-color: #142231;
+    width: 100%;
+}
+
+.bottom ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom ul li {
+    margin-left: 20px;
+}
+
+.bottom ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.bottom ul li a:hover {
+    color: #e2f1ff;
+}
+
+.cart-right {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.btn .material-icons {
+    margin-right: 5px;
+}
+
+.cart-count {
+    background-color: #ff4081;
+    color: white;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+
+.signup {
+    display: flex;
+    list-style: none;
+}
+
+.logo-img {
+    height: 40px;
+    width: auto;
+    border-radius: 90px;
+    margin-right: 10px;
+    object-fit: contain;
+}
