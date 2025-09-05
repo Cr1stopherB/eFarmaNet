@@ -1,17 +1,18 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 5%;
-    background-color: #142231;
+    padding: 1rem 2%;
+    background-color: #005cbe;
     color: rgb(249, 54, 54);
     align-items: center;
+    color: #005cbe;
 }
 
 .bottom {
     display: flex;
     justify-content: flex-end;
     padding: 1rem 5%;
-    background-color: #142231;
+    background-color: #252a30;
     width: 100%;
 }
 
@@ -33,7 +34,7 @@
 }
 
 .bottom ul li a:hover {
-    color: #e2f1ff;
+    color: #000000;
 }
 
 .cart-right {
@@ -80,4 +81,28 @@
     border-radius: 90px;
     margin-right: 10px;
     object-fit: contain;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.nav-link.active{
+    color: #000000;
+    font-weight: bold;
 }
