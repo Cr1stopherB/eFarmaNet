@@ -1,3 +1,4 @@
+/* Estilos básicos generales */
 * {
     margin: 0;
     padding: 0;
@@ -5,110 +6,60 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     background-color: #f8f9fa;
     color: #333;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 .main {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #3faf97;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
-    flex: 1;
+    padding: 15px;
 }
-.h1{
+
+.h1, .h2 {
     text-align: center;
-    margin: 20px 0 20px;
+    color: #2a7cc7;
+    margin: 20px 0;
 }
 
-.h2 {
+.contenido {
+    background-color: white;
     text-align: center;
-    color: #162635;
-    margin: 40px 0 20px;
-    font-size: 2rem;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Contenido central (medicamentos mas vendidos) */
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin: 20px;
+.img {
+    text-align: center;
+    padding: 10px;
 }
 
-.cart-right {
-    margin-left: auto;
-    display: flex;
-    align-items: center;
-}
-
-.small {
-    font-size: 1.5rem;
-    color: white;
-    margin-right: 5px;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-}
-
-.signup {
-    display: flex;
-    list-style: none;
-}
-
-.signup li {
-    margin: 0 10px;
-}
-
-.signup a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.signup a:hover {
-    color: #e2f1ff;
-}
-
-.bottom {
-    display: flex;
-    justify-content: flex-end;
-    padding: 10px 5%;
-    background-color: #142231;
-    width: 100%;
-}
-
+/* Responsive */
 @media (max-width: 768px) {
     .navbar-nav {
         flex-direction: column;
-        align-items: flex-start;
     }
     
     .nav-item {
-        margin: 10px 0;
+        margin: 5px 0;
     }
     
     .grid-container {
         grid-template-columns: 1fr;
     }
     
-    .bottom {
-        justify-content: center;
-    }
-    
     .signup {
         flex-direction: column;
-        align-items: center;
     }
     
     .signup li {
@@ -116,16 +67,41 @@ body {
     }
 }
 
-.contenido{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.contenido {
     background-color: white;
-    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
     margin: 20px;
-    padding: 10px;
-    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.img{
-    text-align: center;
-    padding: 10px;
+.contenido h2 {
+    color: #2a7cc7;
+    margin-bottom: 15px;
+    background-color: #eee;
+    border-radius: 50px;
+}
+
+.contenido h3 {
+    color: #1c5fa3;
+    margin: 15px 0 10px 0;
+}
+
+.contenido ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.contenido li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.footer-noticia {
+    font-style: italic;
+    color: #666;
+    font-size: 14px;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
 }
