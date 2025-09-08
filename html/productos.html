@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../assets/css/responsive.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" href="../assets/css/productos.css">
     <!-- Link para usar iconos de materialize -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
@@ -57,14 +58,20 @@
         <div class="bottom">
             <div class="signup">
                 <ul>
-                    <li><a href="../html/login.html">Registrar</a></li>
+                    <li><a href="../html/registro.html">Registrar</a></li>
                     <li><a href="../html/inicioSesion.html">Iniciar sesion</a></li>
                 </ul>
             </div>
         </div>
-
+        <!-- Contenido de todos lo productos -->
         <h1 class="h1">Productos</h1>
 
+        <!-- Contenedor para alertas -->
+        <div id="alert" class="alert"></div>
+        
+        <!-- Indicador de estado de usuario -->
+        <div id="userStatus" class="user-status"></div>
+
         <div class="container">
             <div class="card">
                 <div class="card-img">💉</div>
@@ -72,7 +79,7 @@
                     <h3 class="card-title">Vitaminas B</h3>
                     <p class="card-text">Complejo de vitaminas B para energía y sistema nervioso.</p>
                     <p class="card-price">$15.50</p>
-                    <a href="#" class="btn">Añadir al carrito</a>
+                    <button class="btn" onclick="añadirProducto(1)">Añadir al carrito</button>
                 </div>
             </div>
 
@@ -82,7 +89,7 @@
                     <h3 class="card-title">Curitas</h3>
                     <p class="card-text">Caja surtida de curitas adhesivas para primeros auxilios.</p>
                     <p class="card-price">$5.25</p>
-                    <a href="#" class="btn">Añadir al carrito</a>
+                    <button class="btn" onclick="añadirProducto(2)">Añadir al carrito</button>
                 </div>
             </div>
 
@@ -92,7 +99,7 @@
                     <h3 class="card-title">Pañales</h3>
                     <p class="card-text">Pañales ultra absorbentes para bebés. Talla 3.</p>
                     <p class="card-price">$24.99</p>
-                    <a href="#" class="btn">Añadir al carrito</a>
+                    <button class="btn" onclick="añadirProducto(3)">Añadir al carrito</button>
                 </div>
             </div>
 
@@ -102,7 +109,7 @@
                     <h3 class="card-title">Vitaminas B</h3>
                     <p class="card-text">Complejo de vitaminas B para energía y sistema nervioso.</p>
                     <p class="card-price">$15.50</p>
-                    <a href="#" class="btn">Añadir al carrito</a>
+                    <button class="btn" onclick="añadirProducto(4)">Añadir al carrito</button>
                 </div>
             </div>
         </div>
@@ -114,7 +121,7 @@
                     <h3 class="card-title">Vitaminas B</h3>
                     <p class="card-text">Complejo de vitaminas B para energía y sistema nervioso.</p>
                     <p class="card-price">$15.50</p>
-                    <a href="#" class="btn">Añadir al carrito</a>
+                    <button class="btn" onclick="añadirProducto(5)">Añadir al carrito</button>
                 </div>
             </div>
 
@@ -124,7 +131,7 @@
                     <h3 class="card-title">Curitas</h3>
                     <p class="card-text">Caja surtida de curitas adhesivas para primeros auxilios.</p>
                     <p class="card-price">$5.25</p>
-                    <a href="#" class="btn">Añadir al carrito</a>
+                    <button class="btn" onclick="añadirProducto(6)">Añadir al carrito</button>
                 </div>
             </div>
 
@@ -134,7 +141,7 @@
                     <h3 class="card-title">Pañales</h3>
                     <p class="card-text">Pañales ultra absorbentes para bebés. Talla 3.</p>
                     <p class="card-price">$24.99</p>
-                    <a href="#" class="btn">Añadir al carrito</a>
+                    <button class="btn" onclick="añadirProducto(7)">Añadir al carrito</button>
                 </div>
             </div>
 
@@ -144,7 +151,7 @@
                     <h3 class="card-title">Vitaminas B</h3>
                     <p class="card-text">Complejo de vitaminas B para energía y sistema nervioso.</p>
                     <p class="card-price">$15.50</p>
-                    <a href="#" class="btn">Añadir al carrito</a>
+                    <button class="btn" onclick="añadirProducto(8)">Añadir al carrito</button>
                 </div>
             </div>
         </div>
@@ -156,7 +163,7 @@
                     <h3 class="card-title">Vitaminas B</h3>
                     <p class="card-text">Complejo de vitaminas B para energía y sistema nervioso.</p>
                     <p class="card-price">$15.50</p>
-                    <a href="#" class="btn">Añadir al carrito</a>
+                    <button class="btn" onclick="añadirProducto(9)">Añadir al carrito</button>
                 </div>
             </div>
 
@@ -166,7 +173,7 @@
                     <h3 class="card-title">Curitas</h3>
                     <p class="card-text">Caja surtida de curitas adhesivas para primeros auxilios.</p>
                     <p class="card-price">$5.25</p>
-                    <a href="#" class="btn">Añadir al carrito</a>
+                    <button class="btn" onclick="añadirProducto(10)">Añadir al carrito</button>
                 </div>
             </div>
 
@@ -176,7 +183,7 @@
                     <h3 class="card-title">Pañales</h3>
                     <p class="card-text">Pañales ultra absorbentes para bebés. Talla 3.</p>
                     <p class="card-price">$24.99</p>
-                    <a href="#" class="btn">Añadir al carrito</a>
+                    <button class="btn" onclick="añadirProducto(11)">Añadir al carrito</button>
                 </div>
             </div>
 
@@ -186,7 +193,7 @@
                     <h3 class="card-title">Vitaminas B</h3>
                     <p class="card-text">Complejo de vitaminas B para energía y sistema nervioso.</p>
                     <p class="card-price">$15.50</p>
-                    <a href="#" class="btn">Añadir al carrito</a>
+                    <button class="btn" onclick="añadirProducto(12)">Añadir al carrito</button>
                 </div>
             </div>
         </div>
@@ -204,5 +211,5 @@
         </div>
     </footer>
 </body>
-
+    <script src="../js/producto.js"></script>
 </html>
