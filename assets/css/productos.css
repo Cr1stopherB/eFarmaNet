@@ -30,3 +30,29 @@
     text-align: center;
     margin: 15px 0;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .user-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .user-actions .btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .alert {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .user-status {
+        padding: 8px;
+        font-size: 14px;
+    }
+}

@@ -36,3 +36,34 @@ footer {
     color: #e0e0e0;
     text-decoration: none;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .containerFooter {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        text-align: center;
+    }
+    
+    .footer-column {
+        margin-bottom: 20px;
+    }
+    
+    .footer-column:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    footer {
+        padding: 20px 0 10px;
+    }
+    
+    .footer-column h3 {
+        font-size: 1rem;
+    }
+    
+    .footer-column p {
+        font-size: 14px;
+    }
+}

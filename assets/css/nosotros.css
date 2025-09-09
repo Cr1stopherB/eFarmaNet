@@ -42,3 +42,46 @@
     color: #2a7cc7;
     margin-bottom: 15px;
 }
+
+/* Responsive */
+@media (max-width: 992px) {
+    .nosotros-container {
+        padding: 15px;
+    }
+    
+    .nosotros-info {
+        padding: 20px;
+    }
+    
+    .mapa-frame {
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nosotros-info {
+        padding: 15px;
+    }
+    
+    .mapa-container {
+        padding: 15px;
+    }
+    
+    .mapa-frame {
+        height: 250px;
+    }
+    
+    .info-contacto {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nosotros-info h2 {
+        font-size: 1.3rem;
+    }
+    
+    .mapa-frame {
+        height: 200px;
+    }
+}

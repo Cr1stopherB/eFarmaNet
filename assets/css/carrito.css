@@ -133,3 +133,40 @@ h1 {
     padding: 40px 0;
     color: #7f8c8d;
 }
+
+/* Responsive */
+@media (max-width: 992px) {
+    .cart-content {
+        flex-direction: column;
+    }
+    
+    .cart-items, .cart-summary {
+        flex: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .cart-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .item-image {
+        margin: 0 auto 10px;
+    }
+    
+    .item-quantity {
+        justify-content: center;
+        margin: 10px 0;
+    }
+    
+    .remove-btn {
+        margin: 10px 0 0;
+    }
+    
+    .container {
+        padding: 10px;
+        margin: 10px;
+    }
+}
