@@ -43,11 +43,11 @@
                         <a class="nav-link active" href="../html/contacto.html">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="html/carrito.html">Ir a carrito</a>
+                        <a class="nav-link active" href="../html/carrito.html">Ir a carrito</a>
                     </li>
                     <li>
                         <div class="cart-right">
-                            <i class="small material-icons">add_shopping_cart</i><span class="cart-count">0</span>
+                            <i class="small material-icons">add_shopping_cart</i>
                         </div>
                     </li>
                 </ul>
@@ -57,30 +57,41 @@
         <div class="bottom">
             <div class="signup">
                 <ul>
-                    <li><a href="html/login.html">Registrar</a></li>
-                    <li><a href="html/inicioSesion.html">Iniciar sesion</a></li>
+                    <li><a href="../html/registro.html">Registrar</a></li>
+                    <li><a href="../html/inicioSesion.html">Iniciar sesion</a></li>
                 </ul>
             </div>
         </div>
-
-        <h1 class="h1">Carrito</h1>
-
         <div class="container">
-            <div class="card">
-                <div class="card-img">
-                    <img src="assets/img/Medicamentos/Paracetamol.webp" alt="">
-                </div>
-                <div class="card-content">
-                    <h3 class="card-title">Paracetamol 80 mg</h3>
-                    <p class="card-text">Medicamento que se puede comprar sin receta para aliviar la fiebre y el dolor.
-                        Es un fármaco seguro para tratar muchos problemas cuando se utiliza correctamente. Pero si se da
-                        en dosis demasiado altas puede hacer que el niño se ponga muy enfermo.</p>
-                    <p class="card-price">$1.490</p>
-                    <a href="html/carrito.html" class="btn">Añadir al carrito</a>
+        <h1>Carrito de Compras</h1>
+        
+        <div class="cart-content">
+            <div class="cart-items" id="cart-items">
+                <div class="empty-cart">
+                    <p>Tu carrito está vacío</p>
                 </div>
             </div>
+            
+            <div class="cart-summary">
+                <div class="summary-title">Resumen</div>
+                <div class="summary-item">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Envío:</span>
+                    <span id="shipping">$0.00</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total:</span>
+                    <span id="total">$0.00</span>
+                </div>
+                <button class="pay-btn" id="pay-btn">Pagar</button>
+            </div>
         </div>
+    </div>
     </main>
+
     <!-- FOOTER -->
     <footer>
         <div class="containerFooter">
@@ -94,6 +105,5 @@
         </div>
     </footer>
 </body>
-<script src="js/main.js"></script>
-
+<script src="../js/carrito.js"></script>
 </html>

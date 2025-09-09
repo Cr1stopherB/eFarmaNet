@@ -48,7 +48,7 @@
                     </li>
                     <li>
                         <div class="cart-right">
-                            <i class="small material-icons">add_shopping_cart</i><span class="cart-count">0</span>
+                            <i class="small material-icons">add_shopping_cart</i>
                         </div>
                     </li>
                 </ul>
@@ -74,126 +74,57 @@
 
         <div class="container">
             <div class="card">
-                <div class="card-img">💉</div>
+                <div class="card-img">
+                    <img src="../assets/img/Medicamentos/Paracetamol.webp" alt="">
+                </div>
                 <div class="card-content">
-                    <h3 class="card-title">Vitaminas B</h3>
-                    <p class="card-text">Complejo de vitaminas B para energía y sistema nervioso.</p>
-                    <p class="card-price">$15.50</p>
-                    <button class="btn" onclick="añadirProducto(1)">Añadir al carrito</button>
+                    <h3 class="card-title">Paracetamol 80 mg</h3>
+                    <p class="card-text">Medicamento que se puede comprar sin receta para aliviar la fiebre y el dolor.
+                        Es un fármaco seguro para tratar muchos problemas cuando se utiliza correctamente. Pero si se da
+                        en dosis demasiado altas puede hacer que el niño se ponga muy enfermo.</p>
+                    <p class="card-price">$1.490</p>
+                    <button class="btn" onclick="agregarAlCarrito(1, 'Paracetamol', 1.490, 'Paracetamol.webp')">Añadir al carrito</button>
                 </div>
             </div>
 
             <div class="card">
-                <div class="card-img">🩹</div>
+                <div class="card-img">
+                    <img src="../assets/img/Medicamentos/Ibuprofeno.webp" alt="Inuprofeno">
+                </div>
                 <div class="card-content">
-                    <h3 class="card-title">Curitas</h3>
-                    <p class="card-text">Caja surtida de curitas adhesivas para primeros auxilios.</p>
-                    <p class="card-price">$5.25</p>
-                    <button class="btn" onclick="añadirProducto(2)">Añadir al carrito</button>
+                    <h3 class="card-title">Ibuprofeno 600 mg</h3>
+                    <p class="card-text">El ibuprofeno recetado se usa para aliviar el dolor, la sensibilidad, la
+                        inflamación y la rigidez ocasionados por la osteoartritis</p>
+                    <p class="card-price">$2.232</p>
+                    <button class="btn" onclick="agregarAlCarrito(2, 'Ibuprofeno', 2.232, 'Ibuprofeno.webp')">Añadir al carrito</button>
                 </div>
             </div>
 
             <div class="card">
-                <div class="card-img">👶</div>
+                <div class="card-img">
+                    <img src="../assets/img/Medicamentos/Amoxicilina.webp" alt="Amoxicilina">
+                </div>
                 <div class="card-content">
-                    <h3 class="card-title">Pañales</h3>
-                    <p class="card-text">Pañales ultra absorbentes para bebés. Talla 3.</p>
-                    <p class="card-price">$24.99</p>
-                    <button class="btn" onclick="añadirProducto(3)">Añadir al carrito</button>
+                    <h3 class="card-title">Amoxicilina</h3>
+                    <p class="card-text">Su acción consiste en detener el crecimiento de las bacterias. Los antibióticos
+                        como la amoxicilina no son efectivos para tratar los resfriados, la gripe y otras infecciones
+                    <p class="card-price">$4.364</p>
+                    <button class="btn" onclick="agregarAlCarrito(3, 'Amoxicilina', 4.364, 'Amoxicilina.webp')">Añadir al carrito</button>
                 </div>
             </div>
 
             <div class="card">
-                <div class="card-img">💉</div>
-                <div class="card-content">
-                    <h3 class="card-title">Vitaminas B</h3>
-                    <p class="card-text">Complejo de vitaminas B para energía y sistema nervioso.</p>
-                    <p class="card-price">$15.50</p>
-                    <button class="btn" onclick="añadirProducto(4)">Añadir al carrito</button>
+                <div class="card-img">
+                    <img src="../assets/img/Medicamentos/Diclofenaco.webp" alt="Diclofenaco">
                 </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="card">
-                <div class="card-img">💉</div>
                 <div class="card-content">
-                    <h3 class="card-title">Vitaminas B</h3>
-                    <p class="card-text">Complejo de vitaminas B para energía y sistema nervioso.</p>
-                    <p class="card-price">$15.50</p>
-                    <button class="btn" onclick="añadirProducto(5)">Añadir al carrito</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-img">🩹</div>
-                <div class="card-content">
-                    <h3 class="card-title">Curitas</h3>
-                    <p class="card-text">Caja surtida de curitas adhesivas para primeros auxilios.</p>
-                    <p class="card-price">$5.25</p>
-                    <button class="btn" onclick="añadirProducto(6)">Añadir al carrito</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-img">👶</div>
-                <div class="card-content">
-                    <h3 class="card-title">Pañales</h3>
-                    <p class="card-text">Pañales ultra absorbentes para bebés. Talla 3.</p>
-                    <p class="card-price">$24.99</p>
-                    <button class="btn" onclick="añadirProducto(7)">Añadir al carrito</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-img">💉</div>
-                <div class="card-content">
-                    <h3 class="card-title">Vitaminas B</h3>
-                    <p class="card-text">Complejo de vitaminas B para energía y sistema nervioso.</p>
-                    <p class="card-price">$15.50</p>
-                    <button class="btn" onclick="añadirProducto(8)">Añadir al carrito</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="card">
-                <div class="card-img">💉</div>
-                <div class="card-content">
-                    <h3 class="card-title">Vitaminas B</h3>
-                    <p class="card-text">Complejo de vitaminas B para energía y sistema nervioso.</p>
-                    <p class="card-price">$15.50</p>
-                    <button class="btn" onclick="añadirProducto(9)">Añadir al carrito</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-img">🩹</div>
-                <div class="card-content">
-                    <h3 class="card-title">Curitas</h3>
-                    <p class="card-text">Caja surtida de curitas adhesivas para primeros auxilios.</p>
-                    <p class="card-price">$5.25</p>
-                    <button class="btn" onclick="añadirProducto(10)">Añadir al carrito</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-img">👶</div>
-                <div class="card-content">
-                    <h3 class="card-title">Pañales</h3>
-                    <p class="card-text">Pañales ultra absorbentes para bebés. Talla 3.</p>
-                    <p class="card-price">$24.99</p>
-                    <button class="btn" onclick="añadirProducto(11)">Añadir al carrito</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-img">💉</div>
-                <div class="card-content">
-                    <h3 class="card-title">Vitaminas B</h3>
-                    <p class="card-text">Complejo de vitaminas B para energía y sistema nervioso.</p>
-                    <p class="card-price">$15.50</p>
-                    <button class="btn" onclick="añadirProducto(12)">Añadir al carrito</button>
+                    <h3 class="card-title">Diclofenaco</h3>
+                    <p class="card-text">Se usa para tratar la artritis, el dolor postraumático y otras afecciones, y se
+                        administra de forma oral, tópica (gel), intramuscular o rectal. Es importante seguir las
+                        indicaciones del médico y conocer los síntomas de advertencia, como dolor de estómago, sangrado
+                        o heces negras.</p>
+                    <p class="card-price">$3.590</p>
+                    <button class="btn" onclick="agregarAlCarrito(4, 'Diclofenaco', 3.5990, 'Diclofenaco.webp')">Añadir al carrito</button>
                 </div>
             </div>
         </div>
@@ -212,4 +143,6 @@
     </footer>
 </body>
     <script src="../js/producto.js"></script>
+    <script src="../js/carrito.js"></script>
+    <script src="../js/main.js"></script>
 </html>
