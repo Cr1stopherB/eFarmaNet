@@ -1,0 +1,167 @@
+/* Estilos básicos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.5;
+}
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.h1, .h2 {
+    text-align: center;
+    color: #2a7cc7;
+    margin: 20px 0;
+}
+
+.contenido {
+    background-color: white;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.img {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+    }
+    
+    .nav-item {
+        margin: 5px 0;
+    }
+    
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .signup {
+        flex-direction: column;
+    }
+    
+    .signup li {
+        margin: 5px 0;
+    }
+}
+
+.contenido {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contenido h2 {
+    color: #2a7cc7;
+    margin-bottom: 15px;
+    background-color: #eee;
+    border-radius: 50px;
+}
+
+.contenido h3 {
+    color: #1c5fa3;
+    margin: 15px 0 10px 0;
+}
+
+.contenido ul {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+.contenido li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.footer-noticia {
+    font-style: italic;
+    color: #666;
+    font-size: 14px;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .contenido {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .h1, .h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contenido {
+        margin: 5px;
+        padding: 10px;
+    }
+    
+    .h1 {
+        font-size: 1.6rem;
+    }
+    
+    .h2 {
+        font-size: 1.4rem;
+    }
+    
+    .contenido h2 {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+    
+    .contenido h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contenido {
+        margin: 5px 0;
+        padding: 10px;
+    }
+    
+    .h1 {
+        font-size: 1.4rem;
+        margin: 15px 0;
+    }
+    
+    .contenido ul {
+        margin-left: 15px;
+    }
+    
+    .footer-noticia {
+        font-size: 12px;
+    }
+}

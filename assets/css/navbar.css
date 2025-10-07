@@ -1,0 +1,135 @@
+/* Estilos básicos para la barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5%;
+    background-color: #2a7cc7;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav-link.active {
+    background-color: rgb(70, 122, 218);
+    color: #2a7cc7;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.nav-link.active:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.logo-img {
+    height: 35px;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+.cart-right {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    background: #1c5fa3;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.cart-count {
+    background-color: #ff4081;
+    color: white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    margin-left: 5px;
+}
+
+.bottom {
+    display: flex;
+    justify-content: flex-end;
+    padding: 8px 5%;
+    background-color: #1c5fa3;
+    width: 100%;
+}
+
+.signup ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 15px;
+    margin: 10px 0 10px;
+}
+
+.signup li {
+    margin-left: 15px;
+}
+
+.signup a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .nav-item {
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .cart-right {
+        margin-top: 10px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .bottom {
+        justify-content: center;
+    }
+    
+    .signup ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .signup li {
+        margin: 5px 0;
+    }
+}

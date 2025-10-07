@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!--Linkeo de archivos css-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" href="../assets/css/carrito.css">
+    <!-- Link para usar iconos de materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <main class="main">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li>
+                        <img class="logo-img" src="../assets/img/Logo.webp" alt="Logo">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../html/productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../html/nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../html/contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../html/carrito.html">Ir a carrito</a>
+                    </li>
+                    <li>
+                        <div class="cart-right">
+                            <i class="small material-icons">add_shopping_cart</i>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="bottom">
+            <div class="signup">
+                <ul>
+                    <li><a href="../html/registro.html">Registrar</a></li>
+                    <li><a href="../html/inicioSesion.html">Iniciar sesion</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+        <h1>Carrito de Compras</h1>
+        
+        <div class="cart-content">
+            <div class="cart-items" id="cart-items">
+                <div class="empty-cart">
+                    <p>Tu carrito está vacío</p>
+                </div>
+            </div>
+            
+            <div class="cart-summary">
+                <div class="summary-title">Resumen</div>
+                <div class="summary-item">
+                    <span>Subtotal:</span>
+                    <span id="subtotal">$0.00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Envío:</span>
+                    <span id="shipping">$0.00</span>
+                </div>
+                <div class="summary-item total">
+                    <span>Total:</span>
+                    <span id="total">$0.00</span>
+                </div>
+                <button class="pay-btn" id="pay-btn">Pagar</button>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="containerFooter">
+            <div class="containerFooter">
+                <div class="footer-column">
+                    <h3><strong>eFarmaNet</strong></h3>
+                    <p>Tu farmacia de confianza online, cuidando de tu salud y bienestar desde 2025.</p>
+                    <p>&copy; 2025 <strong>eFarmaNet</strong> - Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../js/carrito.js"></script>
+</html>
